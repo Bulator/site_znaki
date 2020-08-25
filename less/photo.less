@@ -1,0 +1,67 @@
+.photo {
+    background-image: url('img/gradient.png');
+    height: 650px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    &-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100%;
+    }
+
+    &-block {
+        height: 100%;
+
+        &__title {
+            font-family: 'Museo Sans Cyrl Bold';
+            font-size: 40px;
+            line-height: 48px;
+            width: 555px;
+            color: #FFFFFF;
+            margin-top: 100px;
+        }
+
+        &__text {
+            font-family: Museo Sans Cyrl;
+            width: 533px;
+            font-size: 22px;
+            line-height: 140%;
+            color: #FFFFFF;
+            margin-top: 32px;
+        }
+
+        &__btn {
+            margin-top: 64px;
+            width: 274px;
+            height: 71px;
+            border-radius: 45.5px;
+            border: 1px solid #FFD646;
+            color: #ffffff;
+            font-family: 'Museo Sans Cyrl Bold';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            letter-spacing: 0.05em;
+
+            &:hover {
+                background: linear-gradient(293.67deg, #DD810E -14.03%, #D48700 -14.02%, #FFD300 43.25%, #D48700 104.83%);
+            }
+
+            &:active {
+                background: linear-gradient(293.67deg, #B3680A -14.03%, #D48700 -14.02%, #D2B111 43.25%, #B87A0E 104.83%);
+            }
+        }
+    }
+
+    &__img {
+        width: 700px;
+        height: 800px;
+        position: relative;
+        bottom: 60px;
+        right: 80px;
+    }
+}

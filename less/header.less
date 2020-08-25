@@ -1,0 +1,249 @@
+.header-bg {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.79) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.header {
+    background-image: url("img/mainbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 70px;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+.logo, .menu, .call {
+    margin-top: 37px;
+}
+
+.logo__img {
+    margin-right: 50px;
+}
+
+.menu {
+    width: 62%;
+
+    &-btn {
+        display: none;
+        color: #ffffff;
+    }
+
+    &-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__link {
+            font-family: 'Museo Sans Cyrl Bold';
+            font-size: 18px;
+            line-height: 22px;
+            color: #ffffff;
+
+            &:hover {
+                color: #FFD646;   
+            }
+        }
+    }
+}
+
+.call {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+
+    &__number, &__btn {
+        color: #ffffff;
+        font-family: 'Museo Sans Cyrl Bold';
+        font-weight: 300;
+    }
+
+    &__number {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    &__btn {
+        width: 171px;
+        height: 39px;
+        border-radius: 100px;
+        border: 2px solid rgb(248, 209, 12);
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.05em;
+
+        &:hover {
+            background: linear-gradient(293.67deg, #DD810E -14.03%, #D48700 -14.02%, #FFD300 43.25%, #D48700 104.83%);
+        }
+
+        &:active {
+            background: linear-gradient(293.67deg, #B3680A -14.03%, #D48700 -14.02%, #D2B111 43.25%, #B87A0E 104.83%);
+        }
+    }
+
+    &-phone__btn {
+        display: none;
+    }
+    
+}
+
+.banner {
+    margin-top: 97px;
+    height: 490px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    width: 50%;
+    font-family: 'Museo Sans Cyrl Bold';
+    font-size: 58px;
+    line-height: 122%;
+    color: #FFFFFF;
+}
+
+.description {
+    width: 45%;
+    font-family: 'Museo Sans Cyrl';
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 160%;
+    color: #FFFFFF;
+
+    &__yellow {
+        font-family: 'Museo Sans Cyrl Bold';
+        color: #FFD646;
+        text-decoration: underline;
+    }
+}
+
+.know-btn {
+    width: 360px;
+    height: 101px;
+    background: linear-gradient(289.62deg, #DD810E -14.03%, #D48700 -14.02%, #FFD300 43.25%, #D48700 104.83%);
+    border-radius: 56.5px;
+    font-family: Museo Sans Cyrl Bold;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    &:hover {
+        background: linear-gradient(293.67deg, #DD810E -14.03%, #D48700 -14.02%, #FFD300 43.25%, #D48700 104.83%);
+    }
+
+    &:active {
+        background: linear-gradient(293.67deg, #B3680A -14.03%, #D48700 -14.02%, #D2B111 43.25%, #B87A0E 104.83%);
+    }
+}
+
+.request {
+    display: none;
+    z-index: 150;
+    position: fixed;
+    width: 512px;
+    height: 580px;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
+    border-radius: 70px;
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+
+    &-form {
+        margin-top: 37px;
+        display: flex;
+        flex-direction: column;
+        height: 280px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: 'Museo Sans Cyrl Bold';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 140%;
+        text-align: center;
+        color: #000000;
+        text-align: center;
+        width: 357px;
+        margin: 77px auto;
+        margin-bottom: 0;
+    }
+
+    &__label {
+        width: 100%;
+        text-align: center;
+        font-family: Museo Sans Cyrl;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 140%;
+        color: #000000;
+        opacity: 0.5;
+    }
+
+    &__btn {
+        width: 357px;
+        height: 68px;
+        background: linear-gradient(297.7deg, #DD810E -14.03%, #D48700 -14.02%, #FFD300 43.25%, #D48700 104.83%);
+        border-radius: 100px;
+        font-family: Museo Sans Cyrl;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        display: block;
+        margin: 0 auto;
+        color: #000000;
+        margin-top: 34px;
+    }
+
+    &__instr {
+        margin: 15px auto;
+        margin-bottom: 0;
+        font-family: Museo Sans Cyrl;
+        font-size: 12px;
+        line-height: 140%;
+        text-align: center;
+        color: #000000;
+        opacity: 0.5;
+        width: 296px;
+    }
+}
+
+#gray {
+    display: none;
+    background-color: rgba(1, 1, 1, 0.75);
+    z-index: 5;
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+}
+
+#close {
+    position: absolute;
+    top: 136px;
+    left: 450px;
+    top: 40px;
+}
+
+.active {
+    color: #fff;
+    position: fixed;
+    left: 18px;
+}

@@ -1,0 +1,117 @@
+.block-1 {
+    // background-image: url('img/bg-pattern.jpg');
+    padding-bottom: 164px;
+}
+
+.features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 180px;
+
+    &-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        text-align: center;
+        height: 200px;
+        width: 30%;
+        margin-top: 125px;
+        
+        &__title {
+            font-family: 'Museo Sans Cyrl Bold';
+            margin-top: 20px;
+            font-size: 22px;
+            line-height: 26px;
+            color: #ffffff;
+        }
+
+        &__description {
+            font-family: Museo Sans Cyrl;
+            font-size: 14px;
+            line-height: 140%;
+            text-align: center;
+            color: #ffffff;
+        }
+    }
+}
+
+.order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
+    &__img {
+        width: 50%;
+    }
+
+    &-block {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        height: 350px;
+        width: 46%;
+
+        &__title {
+            font-family: 'Museo Sans Cyrl Bold';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 43px;
+            color: #FFFFFF;
+        }
+
+        &__description {
+            font-family: Museo Sans Cyrl;
+            font-size: 24px;
+            line-height: 140%;
+            color: #FFFFFF;
+        }
+
+        &__btn {
+            width: 290px;
+            height: 68px;
+            background: linear-gradient(293.1deg, #DD810E -14.03%, #D48700 -14.02%, #FFD300 43.25%, #D48700 104.83%);
+            border-radius: 100px;
+            font-family: Museo Sans Cyrl;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            letter-spacing: 0.05em;
+
+            &:active {
+                background: linear-gradient(293.67deg, #B3680A -14.03%, #D48700 -14.02%, #D2B111 43.25%, #B87A0E 104.83%);
+            }
+        }
+    }
+}
+

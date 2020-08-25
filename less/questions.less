@@ -1,0 +1,85 @@
+.questions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    &-block {
+        width: 860px;
+        height: 447px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background: #FFFFFF;
+        border-radius: 50px;
+
+        &__title {
+            font-family: 'Museo Sans Cyrl Bold';
+            margin-top: 90px;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+            color: #000000;
+
+        }
+
+        &__text {
+            font-family: Museo Sans Cyrl;
+            margin-top: 25px;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            color: #000000;
+        }
+
+        &__btn {
+            background: linear-gradient(295.75deg, #DD810E -14.03%, #D48700 -14.02%, #FFD300 43.25%, #D48700 104.83%);
+            border-radius: 100px;
+            font-family: 'Museo Sans Cyrl Bold';
+            margin-top: 45px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            width: 328px;
+            height: 68px;
+            line-height: 140%;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #000000;
+            z-index: 2;
+
+            &:active {
+                background: linear-gradient(293.67deg, #B3680A -14.03%, #D48700 -14.02%, #D2B111 43.25%, #B87A0E 104.83%);
+            }
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 4820px;
+        -webkit-transform: rotate(-3.76deg);
+                transform: rotate(-3.76deg);
+    }
+}
+
+#quiz {
+    z-index: 5;
+}
