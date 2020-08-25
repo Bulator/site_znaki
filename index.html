@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Знаки</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="less/media.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+
+                <button class="menu-btn">
+                        ≡
+                </button>
+
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo" class="logo__img">
+            </div>
+
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list__item"><a href="#services" class="menu-list__link">УСЛУГИ</a></li>
+                    <li class="menu-list__item"><a href="#works" class="menu-list__link">ПРИМЕРЫ РАБОТ</a></li>
+                    <li class="menu-list__item"><a href="#about" class="menu-list__link">О КОМПАНИИ</a></li>
+                    <li class="menu-list__item"><a href="#reports" class="menu-list__link">ОТЗЫВЫ</a></li>
+                    <li class="menu-list__item"><a href="#contacts" class="menu-list__link">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+
+            <button class="call-phone__btn" onclick="show('block')">
+                <img src="img/phone1.png" alt="phone" class="call-phone__img">
+            </button>
+
+            <div class="call">
+                <span class="call__number">+7 (495) 201-30-21</span>
+                <button class="call__btn" onclick="show('block')">ЗАКАЗАТЬ ЗВОНОК</button>
+            </div>
+        </div>
+
+        <!-- FORM -->
+         <div id="gray" onclick="show('none')"></div>
+        <div class="request" id="window">
+            <button id="close" onclick="show('none')"><img src="img/close.png"  alt=""></button>
+            <h1 class="request__title">Получите бесплатный выезд специалиста или свяжитесь с нами по телефону</h1>
+            <form class="request-form" id="form" name="form" action="">
+                <label for="name" class="request__label">Ваше имя</label><input type="text" class="form-field architect-restquest__input architect-restquest__input_name" name="name" placeholder="Введите ваше имя">
+                <label for="phone" class="request__label">Ваш номер телефона</label><input type="text" class="form-field architect-restquest__input architect-restquest__input_number" name="phone" placeholder="Введите ваш телефон">
+                <button class="form-button architect-restquest__btn request__btn form-button">ОСТАВИТЬ ЗАЯВКУ</button>
+            </form>
+            <p class="request__instr">Нажимая на кнопку вы соглашаетесь с условиями политики конфиденциальности</p>
+        </div>
+        <!-- FORM -->
+
+
+
+        <div class="container banner">
+            <h1 class="title">Изготавливаем рекламные конструкции</h1>
+            <p class="description">которые сделают <span class="description__yellow">ваш бизнес ярче</span> и увеличат <span class="description__yellow"> поток клиентов на 30%</span></p>
+            <button class="know-btn" onclick="show('block')">Узнать стоимость и срок изготовления вывески</button>
+        </div>
+    </header>
+
+    <div class="block-1">
+        <div class="container features">
+            <div class="features-item">
+                <img src="img/terms.png" alt="term" class="features-item__img">
+                <span class="features-item__title">Соблюдаем сроки</span>
+                <p class="features-item__description">Изготовления и монтажа за счет своего производства и монтажной бригады
+                </p>
+            </div>
+            <div class="features-item">
+                <img src="img/money.png" alt="term" class="features-item__img">
+                <span class="features-item__title">Стоимость</span>
+                <p class="features-item__description">Каждая статья расходов прописана в смете. Мы не навязываем дополнительных услуг</p>
+            </div>
+            <div class="features-item">
+                <img src="img/certificate.png" alt="term" class="features-item__img">
+                <span class="features-item__title">Гарантии</span>
+                <p class="features-item__description">Предоставляем гарантию 1 год на произведенные вывески</p>
+            </div>
+        </div>
+
+        <div class="container order">
+            <img src="img/card.png" alt="" class="order__img">
+            <div class="order-block">
+                <h1 class="order-block__title">Закажи рекламную вывеску в «Знаки дела»</h1>
+                <p class="order-block__description">и получи табличку с режимом работы,
+                        визитки 100 шт. и датчик света в подарок</p>
+                <button class="order-block__btn" onclick="show('block')">ОФОРМИТЬ ЗАКАЗ</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-make">
+        <div class="container make">
+            <div class="make-text">
+                <h1 class="make-text__title" id="services">Мы изготавливаем</h1>
+                <p class="make-text__description">Произведем и установим все виды рекламных конструкций</p>
+            </div>
+
+            <div class="make-container">
+                <div class="make-container-block">
+                    <div class="make-container-block-item">
+                        <img src="img/izg1.jpg" alt="" class="make-container-block-item__img">
+                        <span class="make-container-block-item__text">Объемные буквы</span>
+                    </div>
+                    <div class="make-container-block-item">
+                        <img src="img/izg2.jpg" alt="" class="make-container-block-item__img">
+                        <span class="make-container-block-item__text">Световые короба</span>
+                    </div>
+                    <div class="make-container-block-item">
+                        <img src="img/izg3.jpg" alt="" class="make-container-block-item__img">
+                        <span class="make-container-block-item__text">Крышные
+                            конструкции</span>
+                    </div>
+                </div>
+                <div class="make-container-block">
+                    <div class="make-container-block-item">
+                        <img src="img/izg4.jpg" alt="" class="make-container-block-item__img">
+                        <span class="make-container-block-item__text">Панель-кронштейны</span>
+                    </div>
+                    <div class="make-container-block-item">
+                        <img src="img/izg5.jpg" alt="" class="make-container-block-item__img">
+                        <span class="make-container-block-item__text">Интерьерные световые короба</span>
+                    </div>
+                    <div class="make-container-block-item">
+                        <img src="img/izg6.jpg" alt="" class="make-container-block-item__img">
+                        <span class="make-container-block-item__text">Световые панели</span>
+                    </div>
+                </div>
+                <div class="make-container-block">
+                    <div class="make-container-block-item">
+                        <img src="img/izg7.jpg" alt="" class="make-container-block-item__img">
+                        <span class="make-container-block-item__text">Полиграфия</span>
+                    </div>
+                    <div class="make-container-block-item">
+                        <img src="img/izg8.jpg" alt="" class="make-container-block-item__img">
+                        <span class="make-container-block-item__text">Зарядные cтеллы</span>
+                    </div>
+                    <div class="make-container-block-item">
+                        <img src="img/izg9.jpg" alt="" class="make-container-block-item__img">
+                        <span class="make-container-block-item__text">Навигационная
+                            реклама</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="make__btn" onclick="show('block')">рассчитать стоимость</button>
+        </div>
+    </div>
+
+    <div class="container about" id="about">
+        <div class="about-text">
+            <h1 class="about-text__title">О компании</h1>
+            <p class="about-text__descr">
+                Уже более <span class="about-text__descr_yellow">5 лет мы</span> помогаем нашим клиентам эффектно рассказать о себе, привлечь внимание аудитории и повысить интерес к торговой марке благодаря яркой рекламной продукции. <span class="about-text__descr_yellow">Наша команда</span> - настоящие фанаты своего дела, а каждый день - новый вызов для нас. Мы беремся за самые разные нестандартные заказы, обеспечивая максимально гибкую ценовую политику и высокую скорость изготовления. <span class="about-text__descr_yellow">Гарантируем профессионализм</span> и вкладываем душу в каждый проект!
+            </p>
+        </div>
+
+        <div class="about-pluses">
+            <div class="about-pluses-item">
+                <img src="img/01.png" alt="" class="about-pluses-item__img">
+                <span class="about-pluses-item__text">Собственное производство</span>
+            </div>
+            <div class="about-pluses-item">
+                <img src="img/02.png" alt="" class="about-pluses-item__img">
+                <span class="about-pluses-item__text">Гарантия 1 год</span>
+            </div>
+            <div class="about-pluses-item">
+                <img src="img/03.png" alt="" class="about-pluses-item__img">
+                <span class="about-pluses-item__text">Изготовление от 1 дня</span>
+            </div>
+            <div class="about-pluses-item">
+                <img src="img/04.png" alt="" class="about-pluses-item__img">
+                <span class="about-pluses-item__text">Рассрочка 0%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container slider-portfolio" id="works">
+        <h1 class="slider-portfolio__title">Портфолио</h1>
+        <div class="slider">
+            <div class="slider-portfolio-item">
+                <img src="img/port1.jpg" alt="" class="slider-portfolio-item__img">
+                <h2 class="slider-portfolio-item__title">Интерьерные световые короба</h2>
+                <p class="slider-portfolio-item__text">
+                    Вывеска сделана в виде отдельных элементов - букв и частей логотипа. Подсветка выполнена светодиодами разного цвета. Сами элементы смонтированы на подложку, которая прячет разводку проводов.
+                </p>
+            </div>
+            <div class="slider-portfolio-item">
+                <img src="img/port2.jpg" alt="" class="slider-portfolio-item__img">
+                <h2 class="slider-portfolio-item__title">Супермаркет BILLA</h2>
+                <p class="slider-portfolio-item__text">Крышная установка с объемными световыми буквами, лицевая панель выполнена из акрилового стекла оклеенной транслюцентной пленкой.</p>
+            </div>
+            <div class="slider-portfolio-item">
+                <img src="img/port3.jpg" alt="" class="slider-portfolio-item__img">
+                <h2 class="slider-portfolio-item__title">ВЫВЕСКА Funky World</h2>
+                <p class="slider-portfolio-item__text">Входная группа выполнена из объемных элементов с применением пластика ПВХ и объемных световых букв </p>
+            </div>
+            <div class="slider-portfolio-item">
+                <img src="img/port4.jpg" alt="" class="slider-portfolio-item__img">
+                <h2 class="slider-portfolio-item__title">Пекарня-кафе PAUL</h2>
+                <p class="slider-portfolio-item__text">Фриз входной группы выполнен в виде короба из композитного материала с объемными буквами из оргстекла толщиной 10 мм и подсветкой букв светодиодами </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="questions container">
+        <div class="questions-block">
+            <h1 class="questions-block__title">Ответьте на 5 простых вопросов </h1>
+            <p class="questions-block__text">и за 3 минуты узнайте стоимость вывески</p>
+            <a id="quiz" href="https://mrqz.me/5dce8f7f1d7e8a00445715c9"><button class="questions-block__btn">ОТВЕТИТЬ НА ВОПРОСЫ</button></a>
+            
+        </div>
+        <img src="img/zd.png" alt="" class="questions__img">
+    </div>
+
+    <div class="clients" id="reports">
+        <div class="container clients-block">
+            <h1 class="clients-block__title">Наши клиенты</h1>
+            <p class="clients-block__text">За 5 лет работы нам доверили изготовление вывесок более 1800 клиентов, среди которых:</p>
+            <div class="clients-slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+                <img src="img/client1.png" alt="" class="clients-slider__item">
+                <img src="img/client2.png" alt="" class="clients-slider__item">
+                <img src="img/client3.png" alt="" class="clients-slider__item">
+                <img src="img/client4.png" alt="" class="clients-slider__item">
+                <img src="img/client5.png" alt="" class="clients-slider__item">
+                <img src="img/client6.png" alt="" class="clients-slider__item">
+                <img src="img/client7.png" alt="" class="clients-slider__item">
+                <img src="img/client8.png" alt="" class="clients-slider__item">
+            </div>
+        </div>
+    </div>
+
+    <div class="photo">
+        <div class="container photo-container">
+            <div class="photo-block">
+                <h1 class="photo-block__title">Проводим оценку объекта по фото</h1>
+                <p class="photo-block__text">Прикрепите фото вашего объекта и наш специалист проведет аудит, позвонит вам и предоставит всю информацию по проекту</p>
+                <button class="photo-block__btn" onclick="show('block')">ПРИКРЕРПИТЬ ФОТО</button>
+            </div>
+            <img src="img/photos.png" alt="" class="photo__img">
+        </div>
+    </div>
+
+    <div class="architect">
+        <div class="container architect-block">
+            <h1 class="architect-block__title">Согласовываем вывески
+                    с Комитетом по Архитектуре г. Москвы</h1>
+            <div class="architect-restquest">
+                <h2 class="architect-restquest__title">Остались вопросы</h2>
+                <p class="architect-restquest__text">Получите бесплатный выезд специалиста или свяжитесь с нами по телефону</p>
+                <form class="architect-restquest-form" id="form_2" name="form_2">
+                    <label for="name_2" class="architect-restquest__label">Ваше имя</label><input type="text" class="form_2-field architect-restquest__input architect-restquest__input_name" name="name_2" placeholder="Анатолий" >
+                    <label for="phone_2" class="architect-restquest__label">Ваш номер телефона</label><input type="text" class="form_2-field architect-restquest__input architect-restquest__input_number" name="phone_2" placeholder="+7 777 777 77 77">
+                    <label for="comment" class="architect-restquest__label">Комментарий</label><input type="text" class="form_2-field architect-restquest__input architect-restquest__input_comment" name="comment" placeholder="">
+                    <button class="form_2-btton architect-restquest__btn">ОСТАВИТЬ ЗАЯВКУ</button>
+                </form>
+                <p class="architect-restquest__instruction">Нажимая на кнопку вы соглашаетесь с условиями политики конфиденциальности</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contacts-wrap" id="contacts">
+        <div class="contacts container">
+            <div class="contacts-item">
+                <h1 class="contacts-item__title">Адрес:</h1>
+                <span class="contacts-item__text contacts-item__text_adres">Пресненская наб. 8, башня «Санкт-Петербург», 55 этаж, апартаменты 551</span>
+            </div>
+            <div class="contacts-item">
+                <h1 class="contacts-item__title">Телефон:</h1>
+                <span class="contacts-item__text">+7 (495) 201-30-21</span>
+            </div>
+            <div class="contacts-item">
+                <h1 class="contacts-item__title">Почта:</h1>
+                <span class="contacts-item__text">info@ragnelia.ru</span>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="map">
+            <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab112d1d2d5a301b66572d482b2adeae6726bf7b7294a9315f8012e68fb16185a&amp;source=constructor" width="1280" height="402" frameborder="0"></iframe>
+    </div>
+    
+    <div class="footer container">
+        <div class="footer-item">
+            <span class="footer-item__text">© 2019   |   Знаки дела</span>
+        </div>
+        <div class="footer-item">
+            <span class="footer-item__text footer-item__text_under">Политика конфиденциальности</span>
+        </div>
+        <!--<div class="footer-item">
+            <span class="footer-item__text footer-item__text_position">Задизайнено и разработано в WAYAgency</span>
+            <img src="img/footer-icon.png" alt="" class="footer-item__img">
+        </div>-->
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
